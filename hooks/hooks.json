@@ -19,7 +19,7 @@
         "hooks": [
           {
             "type": "prompt",
-            "prompt": "Check whether /handoff was run during THIS session. If not, use AskUserQuestion to ask: A) run /handoff now, B) skip. If /handoff was already run, end without prompting.",
+            "prompt": "Check whether /handoff was run during THIS session (not whether a file exists from a previous session). If /handoff was run, return approve. If not, return block with reason: this session has no handoff yet.",
             "timeout": 30
           }
         ]
