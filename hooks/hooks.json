@@ -1,5 +1,4 @@
 {
-  "description": "fieldwork-flow: session continuity hooks",
   "hooks": {
     "SessionStart": [
       {
