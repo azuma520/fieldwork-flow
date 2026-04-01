@@ -1,0 +1,11 @@
+{
+  "name": "fieldwork-flow",
+  "owner": { "name": "azuma520" },
+  "plugins": [
+    {
+      "name": "fieldwork-flow",
+      "source": ".",
+      "description": "Session continuity and project management for non-engineering Claude Code workflows"
+    }
+  ]
+}
