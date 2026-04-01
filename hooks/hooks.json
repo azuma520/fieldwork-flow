@@ -1,4 +1,5 @@
 {
+  "description": "fieldwork-flow: session continuity hooks",
   "hooks": {
     "SessionStart": [
       {
@@ -18,7 +19,7 @@
         "hooks": [
           {
             "type": "prompt",
-            "prompt": "Before ending this session, check whether you have run /handoff during THIS session (not whether a handoff file exists for today — there may be multiple sessions per day).\n\nIf /handoff was NOT run in this session:\n  Use AskUserQuestion to ask the user:\n  \"這個 session 還沒寫工作紀錄。\"\n  A) 現在寫（執行 /handoff 流程）\n  B) 跳過，下次再說\n\n  If user chooses A: run the /handoff workflow.\n  If user chooses B or does not respond: end gracefully.\n\nIf /handoff WAS already run: end without prompting.",
+            "prompt": "Check whether /handoff was run during THIS session. If not, use AskUserQuestion to ask: A) run /handoff now, B) skip. If /handoff was already run, end without prompting.",
             "timeout": 30
           }
         ]
